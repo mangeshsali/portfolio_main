@@ -8,8 +8,9 @@ var typed = new Typed("#auto-type", {
   loopCount: Infinity,
 });
 
-const hamburger = document.getElementById("hamburger");
-const menu = document.getElementById("menu");
+// const hamburger = document.getElementById("hamburger");
+const hamburger = document.querySelector("#hamburger");
+const menu = document.querySelector("#menu");
 
 hamburger.addEventListener("click", () => {
   menu.classList.toggle("hidden");
