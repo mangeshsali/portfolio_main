@@ -10,8 +10,13 @@ var typed = new Typed("#auto-type", {
 
 // const hamburger = document.getElementById("hamburger");
 const hamburger = document.querySelector("#hamburger");
+const iclose = document.querySelector("#close");
 const menu = document.querySelector("#menu");
 
 hamburger.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
+
+iclose.addEventListener("click", () => {
   menu.classList.toggle("hidden");
 });
