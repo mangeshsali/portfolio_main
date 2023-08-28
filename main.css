@@ -41,7 +41,6 @@ footer {
 .image-container {
   position: relative;
   display: inline-block;
-  overflow: hidden; /* Prevent buttons from overflowing outside the container */
 }
 
 .image-container:hover .button-container {
@@ -57,7 +56,6 @@ footer {
   opacity: 0;
   transition: opacity 0.3s, transform 0.3s;
   text-align: center;
-  z-index: 1; /* Place the button container above the image */
 }
 
 .button {
