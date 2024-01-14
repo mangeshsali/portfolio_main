@@ -517,52 +517,63 @@
 
     <!-- contact -->
 
-    <section>
-      <div class="lg:w-[1100px] mx-auto lg:my-[95px]">
-        <h2
-          id="Contact"
-          class="font-poppins font-medium text-[2.5em] lg:text-[38px] text-center"
-        >
-          Contact Me
-        </h2>
+     <div class="lg:w-[1100px] mx-auto lg:my-[95px]">
+      <h2
+        id="Contact"
+        class="font-poppins font-medium text-[2.5em] lg:text-[38px] text-center"
+      >
+        Contact Me
+      </h2>
 
-        <div class="flex mx-auto justify-center items-center text-center">
-          <div>
-            <img src="./assets/contact.png" alt="" class="hidden lg:block" />
-          </div>
+      <div class="flex flex-col items-center lg:flex-row lg:justify-center">
+        <div class="lg:w-[50%]">
+          <img src="./assets/contact.png" alt="" class="hidden lg:block" />
+        </div>
 
-          <div class="flex flex-col">
+        <div class="flex flex-col lg:w-[50%]">
+          <form id="contactForm" class="text-left px-4 lg:px-0">
             <p
               class="font-poppins font-medium text-[1.5rem] lg:text-[28px] my-4"
             >
               Get in touch
             </p>
+
+            <p
+              class="bg-green-300 text-black font-medium p-4 rounded-lg m-4 alert"
+            >
+              Thank You...🙌
+            </p>
+
             <input
               type="text"
+              id="name"
               placeholder="Full Name*"
-              class="focus:outline-none font-poppins text-[1.5rem] lg:text-[1.1rem] mb-4 bg-[#F3F5F7] lg:w-[30rem] rounded-lg py-3 px-3 ml-5 mr-5"
+              class="focus:outline-none font-poppins text-[1.5rem] lg:text-[1.1rem] mb-4 lg:w-[70%] w-full rounded-lg py-3 px-3 border"
             />
+
             <input
               type="email"
               name=""
-              id=""
+              id="email"
               placeholder="Email*"
-              class="focus:outline-none font-poppins text-[1.5rem] lg:text-[1.1rem] mb-4 bg-[#F3F5F7] lg:w-[30rem] w-fullounded-lg py-3 px-3 ml-5 mr-5"
+              class="focus:outline-none font-poppins text-[1.5rem] lg:text-[1.1rem] mb-4 lg:w-[70%] w-full rounded-lg py-3 px-3 border"
             />
+
             <textarea
               placeholder="Message"
-              class="focus:outline-none font-poppins text-[1.5rem] mb-4 bg-[#F3F5F7] lg:w-[30rem] w-fullrounded-lg py-3 px-3 ml-5 mr-5"
+              id="message"
+              class="focus:outline-none font-poppins text-[1.5rem] mb-4 lg:w-[70%] w-full rounded-lg py-3 px-3 border"
             ></textarea>
+
             <button
-              class="bg-regal-blue py-2 px-5 rounded-md items-center font-poppins lg:text-[17px] text-white my-5 hover:dark:bg-violet-800 ml-5 mr-5 text-[1rem]"
+              class="bg-regal-blue py-2 px-5 rounded-md items-center font-poppins lg:text-[17px] text-white my-5 hover:dark:bg-violet-800 text-[1rem]"
             >
               Say Hello 👋
             </button>
-          </div>
+          </form>
         </div>
       </div>
-    </section>
-
+    </div>
     <!-- footer -->
     <footer
       class="bg-regal-blue text-white font-poppins text-[1rem] rounded-md pb-0 w-full"
@@ -645,5 +656,7 @@
       </div>
     </footer>
     <script src="./index.js" type="module"></script>
+       <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
   </body>
 </html>
