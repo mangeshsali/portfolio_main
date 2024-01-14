@@ -96,4 +96,8 @@ footer {
 .image-container:hover img {
   filter: brightness(70%);
 }
+.alert {
+  display: none;
+}
+
 
