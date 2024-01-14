@@ -85,7 +85,10 @@ footer {
   background-color: #d50000;
 }
 
-/* Style for the image */
+/* Style for the image */.alert {
+  display: none;
+}
+
 .image-container img {
   transition: filter 0.3s;
 }
@@ -93,3 +96,4 @@ footer {
 .image-container:hover img {
   filter: brightness(70%);
 }
+
